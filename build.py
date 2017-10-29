@@ -2,7 +2,7 @@ from conan.packager import ConanMultiPackager
 import platform
 
 if __name__ == "__main__":
-    builder = ConanMultiPackager()
+    builder = ConanMultiPackager(args="--build missing")
     builder.add_common_builds(shared_option_name="giflib:shared", pure_c=True)
     if platform.system() == "Windows": # Library not prepared to create a .lib to link with (only dll)
         # Remove shared builds in Windows

@@ -4,8 +4,8 @@ import os
 from cStringIO import StringIO
 
 ############### CONFIGURE THESE VALUES ##################
-default_user = "lasote"
-default_channel = "testing"
+default_user = "zamazan4ik"
+default_channel = "stable"
 #########################################################
 
 channel = os.getenv("CONAN_CHANNEL", default_channel)
