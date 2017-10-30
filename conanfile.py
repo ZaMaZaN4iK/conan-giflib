@@ -12,7 +12,7 @@ class ZlibNgConan(ConanFile):
     settings = "os", "arch", "compiler", "build_type"
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = "shared=False", "fPIC=True"
-    url="http://github.com/lasote/conan-giflib"
+    url="http://github.com/ZaMaZaN4iK/conan-giflib"
     license="https://sourceforge.net/p/giflib/code/ci/master/tree/COPYING"
     exports = ["FindGIF.cmake", "CMakeLists.txt", "getopt.c", "getopt.h", "unistd.h.in"]
     # The exported files I took them from https://github.com/bjornblissing/osg-3rdparty-cmake/tree/master/giflib
