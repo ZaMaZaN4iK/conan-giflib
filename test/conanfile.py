@@ -29,7 +29,4 @@ class DefaultNameConan(ConanFile):
         self.copy(pattern="*.dylib", dst="bin", src="lib")
         
     def test(self):
-        out = StringIO()
-        self.run("cd bin && .%sgifcolor -h" % os.sep, output=out)
-        print("**********\n%s***********" % str(out.getvalue()))
-        assert "gifcolor Version 5.1" in str(out.getvalue())
+        self.run("cd bin && .%sgifcolor -h" % os.sep)
